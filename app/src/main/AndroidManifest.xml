@@ -10,10 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Maintenance">
         <activity
-            android:name=".menu"
+            android:name=".Menu"
             android:exported="false" />
         <activity
-            android:name=".authentication"
+            android:name=".Authentication"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

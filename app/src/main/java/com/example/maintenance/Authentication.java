@@ -9,7 +9,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class authentication extends AppCompatActivity {
+public class Authentication extends AppCompatActivity {
 
     EditText mlogin_input;
     EditText mpassword_input;
@@ -31,8 +31,8 @@ public class authentication extends AppCompatActivity {
                 String login = mlogin_input.getText().toString();
                 String password = mpassword_input.getText().toString();
 
-                if (login == "root" && password == "root"){
-                    Intent intent = new Intent(authentication.this, menu.class);
+                if (login.equals("root") && password.equals("root")){
+                    Intent intent = new Intent(Authentication.this, Menu.class);
                     startActivity(intent);
                 } else {
                     Toast.makeText(getApplicationContext(), "Erreur d'authentification", Toast.LENGTH_LONG).show();
