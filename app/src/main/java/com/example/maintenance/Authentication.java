@@ -20,9 +20,9 @@ public class Authentication extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_authentication);
 
-        EditText mlogin_input = (EditText)findViewById(R.id.login_input);
-        EditText mpassword_input = (EditText)findViewById(R.id.password_input);
-        Button mconnectButton = (Button)findViewById(R.id.connectButton);
+        mlogin_input = (EditText)findViewById(R.id.login_input);
+        mpassword_input = (EditText)findViewById(R.id.password_input);
+        mconnectButton = (Button)findViewById(R.id.connectButton);
 
         mconnectButton.setOnClickListener(new View.OnClickListener() {
             @Override
