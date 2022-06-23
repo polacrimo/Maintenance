@@ -3,8 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Alex/Documents/Dev/Android Studio/Projects/Maintenance_tp/app/src/main/res/layout/activity_authentication.xml" value="0.1" />
         <entry key="..\:/Users/Alex/Documents/Dev/Android Studio/Projects/Maintenance_tp/app/src/main/res/layout/activity_deuxieme.xml" value="0.24365942028985507" />
         <entry key="..\:/Users/Alex/Documents/Dev/Android Studio/Projects/Maintenance_tp/app/src/main/res/layout/activity_main.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/Alex/Documents/Dev/Android Studio/Projects/Maintenance_tp/app/src/main/res/layout/activity_saisie_intervention.xml" value="0.1" />
+        <entry key="..\:/Users/Alex/Documents/Dev/Android Studio/Projects/Maintenance_tp/app/src/main/res/layout/activity_saisie_proprietaire.xml" value="0.1" />
+        <entry key="..\:/Users/Alex/Documents/Dev/Android Studio/Projects/Maintenance_tp/app/src/main/res/layout/activity_saisie_vehicule.xml" value="0.1" />
         <entry key="..\:/Users/Alex/Documents/Dev/Android Studio/Projects/app/src/main/res/layout/activity_main.xml" value="0.22826086956521738" />
       </map>
     </option>
