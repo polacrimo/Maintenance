@@ -10,6 +10,33 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Maintenance">
         <activity
+            android:name=".InfosProprietaire"
+            android:exported="false" />
+        <activity
+            android:name=".InfosIntervention"
+            android:exported="false" />
+        <activity
+            android:name=".InfosVehicule"
+            android:exported="false" />
+        <activity
+            android:name=".ListeProprietaire"
+            android:exported="false" />
+        <activity
+            android:name=".ListeIntervention"
+            android:exported="false" />
+        <activity
+            android:name=".ListeVehicule"
+            android:exported="false" />
+        <activity
+            android:name=".SaisieProprietaire"
+            android:exported="false" />
+        <activity
+            android:name=".SaisieIntervention"
+            android:exported="false" />
+        <activity
+            android:name=".SaisieVehicule"
+            android:exported="false" />
+        <activity
             android:name=".Menu"
             android:exported="false" />
         <activity
