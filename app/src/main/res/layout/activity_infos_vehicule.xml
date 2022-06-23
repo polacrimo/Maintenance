@@ -6,4 +6,131 @@
     android:layout_height="match_parent"
     tools:context=".InfosVehicule">
 
+    <TextView
+        android:id="@+id/titreVehicule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Infos saisie véhicule"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:layout_marginTop="40dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/matricule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="matricule"
+        android:textSize="25dp"
+        android:layout_marginHorizontal="40dp"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintBottom_toTopOf="@id/marque"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/marque"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="marque"
+        android:textSize="25dp"
+        android:layout_marginHorizontal="40dp"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintTop_toBottomOf="@id/matricule"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/modele" />
+
+    <TextView
+        android:id="@+id/modele"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="modele"
+        android:textSize="25dp"
+        android:layout_marginHorizontal="40dp"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintTop_toBottomOf="@id/marque"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/couleur" />
+
+    <TextView
+        android:id="@+id/couleur"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="couleur"
+        android:textSize="25dp"
+        android:layout_marginHorizontal="40dp"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintTop_toBottomOf="@id/modele"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/puissance" />
+
+    <TextView
+        android:id="@+id/puissance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="puissance"
+        android:textSize="25dp"
+        android:layout_marginHorizontal="40dp"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintTop_toBottomOf="@id/couleur"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/categorie" />
+
+    <TextView
+        android:id="@+id/categorie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="categorie"
+        android:textSize="25dp"
+        android:layout_marginHorizontal="40dp"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintTop_toBottomOf="@id/puissance"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/boiteVitesse" />
+
+    <TextView
+        android:id="@+id/boiteVitesse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="boiteVitesse"
+        android:textSize="25dp"
+        android:layout_marginHorizontal="40dp"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintTop_toBottomOf="@id/categorie"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/annee" />
+
+    <TextView
+        android:id="@+id/annee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="annee"
+        android:textSize="25dp"
+        android:layout_marginHorizontal="40dp"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintTop_toBottomOf="@id/boiteVitesse"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <Button
+        android:id="@+id/retourMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="retour au menu"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

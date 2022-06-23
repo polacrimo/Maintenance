@@ -6,4 +6,105 @@
     android:layout_height="match_parent"
     tools:context=".InfosIntervention">
 
+    <TextView
+        android:id="@+id/titreIntervention"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Infos saisie intervention"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:layout_marginTop="40dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/numero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="numero"
+        android:textSize="25dp"
+        android:layout_marginHorizontal="40dp"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintBottom_toTopOf="@id/dateInterv"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/dateInterv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="dateInterv"
+        android:textSize="25dp"
+        android:layout_marginHorizontal="40dp"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintTop_toBottomOf="@id/numero"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/panne" />
+
+    <TextView
+        android:id="@+id/panne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="panne"
+        android:textSize="25dp"
+        android:layout_marginHorizontal="40dp"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintTop_toBottomOf="@id/dateInterv"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/duree" />
+
+    <TextView
+        android:id="@+id/duree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="duree"
+        android:textSize="25dp"
+        android:layout_marginHorizontal="40dp"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintTop_toBottomOf="@id/panne"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/responsable" />
+
+    <TextView
+        android:id="@+id/responsable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="responsable"
+        android:textSize="25dp"
+        android:layout_marginHorizontal="40dp"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintTop_toBottomOf="@id/duree"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/description" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="description"
+        android:textSize="25dp"
+        android:layout_marginHorizontal="40dp"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintTop_toBottomOf="@id/responsable"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <Button
+        android:id="@+id/retourMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="retour au menu"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
