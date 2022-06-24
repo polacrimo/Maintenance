@@ -10,12 +10,9 @@ public class SaisieVehicule extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
-        view1 = (TextView) findViewById(R.id.view1);
-
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_saisie_vehicule);
-
-        view1.setText("Hello");
+        //view1 = (TextView) findViewById(R.id.view1);
+        //view1.setText("Hello");
     }
 }

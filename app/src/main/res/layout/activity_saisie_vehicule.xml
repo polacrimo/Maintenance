@@ -1,221 +1,202 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".SaisieVehicule" >
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".SaisieVehicule"
+    android:orientation="horizontal">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/bluetheme"
         android:orientation="horizontal"
-        android:padding="10dp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent">
+        android:padding="10dp">
         <TextView
-            android:id="@+id/login"
+            android:id="@+id/logina"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:layout_margin="40dp"
             android:text="Saisie de véhicules"
             android:textSize="100sp"
-            android:textColor="@color/white"
-            />
+            android:textColor="@color/white" />
 
-    </LinearLayout>
+        </LinearLayout>
 
-    <!--
-    <TableLayout
-        android:layout_width="409dp"
-        android:layout_height="710dp"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="20dp"
-        tools:ignore="MissingConstraints">
 
-        <TableRow
+        <TableLayout
+            android:layout_width="409dp"
+            android:layout_height="710dp"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="20dp"
+            tools:ignore="MissingConstraints">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </TableLayout>
+
+        <TableLayout
+            android:id="@+id/GridLayout1"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" >
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="20dp"
+            android:columnCount="2"
+            android:rowCount="8"
+            tools:context=".GridXMLActivity">
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:id="@+id/view1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    android:text="Immatriculation"
+                    android:textSize="50sp" />
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_row="0"
+                    android:layout_column="1"
+                    android:hint="Saisissez la plaque d'immatriculation" />
+            </TableRow>
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-    </TableLayout>
-    -->
-    <TableLayout
-        android:id="@+id/GridLayout1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="10dp"
-        android:layout_marginVertical="20dp"
-        android:columnCount="2"
-        android:rowCount="8"
-        tools:context=".GridXMLActivity"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent">
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_row="1"
+                    android:layout_column="0"
+                    android:text="Marque"
+                    android:textSize="75sp" />
 
-<!--        Ligne 1-->
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" >
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_row="1"
+                    android:layout_column="1"
+                    android:hint="Saisissez la marque du véhicule" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_row="2"
+                    android:layout_column="0"
+                    android:text="Modèle"
+                    android:textSize="75sp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_row="2"
+                    android:layout_column="1"
+                    android:hint="Saisissez le modèle du véhicule" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_row="3"
+                    android:layout_column="0"
+                    android:text="Couleur"
+                    android:textSize="75sp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_row="3"
+                    android:layout_column="1"
+                    android:hint="Saisissez la couleur du véhicule" />
+            </TableRow>
+
             <TextView
-                android:id="@+id/view1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_row="0"
+                android:layout_row="4"
                 android:layout_column="0"
-                android:text="Immatriculation"
-                android:textSize="50sp"
-                app:lineHeight="@dimen/material_emphasis_medium" />
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_row="0"
-                android:layout_column="1"
-                android:hint="Saisissez la plaque d'immatriculation" />
-        </TableRow>
-
-<!--        Ligne 2-->
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" >
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_row="1"
-                android:layout_column="0"
-                android:text="Marque"
+                android:text="Puissance"
                 android:textSize="75sp" />
 
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_row="1"
+                android:layout_row="4"
                 android:layout_column="1"
-                android:hint="Saisissez la marque du véhicule" />
-        </TableRow>
+                android:hint="Saisissez le nombre de chevaux dynamiques" />
 
-<!--        Ligne 3-->
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" >
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_row="2"
+                android:layout_row="5"
                 android:layout_column="0"
-                android:text="Modèle"
+                android:text="Catégorie"
                 android:textSize="75sp" />
 
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_row="2"
+                android:layout_row="5"
                 android:layout_column="1"
-                android:hint="Saisissez le modèle du véhicule" />
-        </TableRow>
+                android:text="Compact, Citadine, Berline, S.U.V, ..." />
 
-<!--        Ligne 4-->
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" >
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_row="3"
+                android:layout_row="6"
                 android:layout_column="0"
-                android:text="Couleur"
+                android:text="Boite de vitesse"
                 android:textSize="75sp" />
 
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_row="3"
+                android:layout_row="6"
                 android:layout_column="1"
-                android:hint="Saisissez la couleur du véhicule" />
-        </TableRow>
+                android:text="Boite manuelle ou automatique" />
 
-<!--        Ligne 5-->
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_row="4"
-            android:layout_column="0"
-            android:text="Puissance"
-            android:textSize="75sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_row="7"
+                android:layout_column="0"
+                android:text="Année"
+                android:textSize="75sp" />
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_row="4"
-            android:layout_column="1"
-            android:hint="Saisissez le nombre de chevaux dynamiques" />
-
-<!--        Ligne 6-->
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_row="5"
-            android:layout_column="0"
-            android:text="Catégorie"
-            android:textSize="75sp" />
-
-<!--        TODO : changer EditText en Spinner-->
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_row="5"
-            android:layout_column="1"
-            android:text="Compact, Citadine, Berline, S.U.V, ..." />
-
-<!--        Ligne 7-->
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_row="6"
-            android:layout_column="0"
-            android:text="Boite de vitesse"
-            android:textSize="75sp" />
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_row="6"
-            android:layout_column="1"
-            android:text="Boite manuelle ou automatique" />
-
-<!--        Ligne 8-->
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_row="7"
-            android:layout_column="0"
-            android:text="Année"
-            android:textSize="75sp" />
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_row="7"
-            android:layout_column="1"
-            android:text="Année de mise en circulation" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_row="7"
+                android:layout_column="1"
+                android:text="Année de mise en circulation" />
 
 
-    </TableLayout>
+        </TableLayout>
 
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

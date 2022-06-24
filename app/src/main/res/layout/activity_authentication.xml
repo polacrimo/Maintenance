@@ -37,7 +37,7 @@
             android:layout_height="wrap_content" >
 
             <TextView
-                android:id="@+id/login"
+                android:id="@+id/login_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_column="0"
@@ -49,6 +49,7 @@
                 android:id="@+id/login_input"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:text="root"
                 android:layout_column="1"
                 android:inputType="text" />
         </TableRow>
@@ -69,6 +70,7 @@
                 android:id="@+id/password_input"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:text="root"
                 android:layout_column="1"
                 android:inputType="textPassword" />
         </TableRow>
