@@ -35,7 +35,7 @@ public class Authentication extends AppCompatActivity {
                     Intent intent = new Intent(Authentication.this, Menu.class);
                     startActivity(intent);
                 } else {
-                    Toast.makeText(getApplicationContext(), "Erreur d'authentification", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), "Authentication error", Toast.LENGTH_LONG).show();
                 }
             }
         });

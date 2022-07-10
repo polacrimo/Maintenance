@@ -22,6 +22,8 @@ public class InfosVehicule extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_infos_vehicule);
 
+        Vehicule vehiculeSaisi = (Vehicule) getIntent().getSerializableExtra("vehicule");
+
         matriculeText = (TextView) findViewById(R.id.matricule);
         marqueText = (TextView) findViewById(R.id.marque);
         modeleText = (TextView) findViewById(R.id.modele);
@@ -31,7 +33,15 @@ public class InfosVehicule extends AppCompatActivity {
         boiteVitesseText = (TextView) findViewById(R.id.boiteVitesse);
         anneeText = (TextView) findViewById(R.id.annee);
 
-        //Vehicule newVehicule = (Vehicule) getIntent().getSerializableExtra("");
+        matriculeText.setText(vehiculeSaisi.getImmat());
+        marqueText.setText(vehiculeSaisi.getMarque());
+        modeleText.setText(vehiculeSaisi.getModele());
+        puissanceText.setText(vehiculeSaisi.getPuissance());
+        categorieText.setText(vehiculeSaisi.getCategorie());
+        boiteVitesseText.setText(vehiculeSaisi.getCouleur());
+        anneeText.setText(vehiculeSaisi.getAnnee());
+
+        //com.example.maintenance.SaisieVehicule.Vehicule newVehicule = (com.example.maintenance.SaisieVehicule.Vehicule) getIntent().getSerializableExtra("");
 
         //matriculeText.setText(newVehicule.getMatricule());
         //marqueText.setText(newVehicule.getMarque());

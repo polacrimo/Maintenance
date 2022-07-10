@@ -1,202 +1,297 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     tools:context=".SaisieVehicule"
-    android:orientation="horizontal">
+    android:orientation="vertical">
+
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/bluetheme"
         android:orientation="horizontal"
-        android:padding="10dp">
+        android:padding="20dp">
         <TextView
-            android:id="@+id/logina"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:layout_margin="40dp"
             android:text="Saisie de véhicules"
-            android:textSize="100sp"
+            android:textSize="30sp"
             android:textColor="@color/white" />
 
-        </LinearLayout>
+    </LinearLayout>
 
 
-        <TableLayout
-            android:layout_width="409dp"
-            android:layout_height="710dp"
-            tools:layout_editor_absoluteX="1dp"
-            tools:layout_editor_absoluteY="20dp"
-            tools:ignore="MissingConstraints">
+    <TableLayout
+        android:id="@+id/vehiculesTab"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="20dp"
+        android:columnCount="1"
+        android:rowCount="160"
+        tools:context=".SaisieVehicule">
 
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-        </TableLayout>
-
-        <TableLayout
-            android:id="@+id/GridLayout1"
+        <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="10dp"
-            android:layout_marginVertical="20dp"
-            android:columnCount="2"
-            android:rowCount="8"
-            tools:context=".GridXMLActivity">
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" >
-                <TextView
-                    android:id="@+id/view1"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_row="0"
-                    android:layout_column="0"
-                    android:text="Immatriculation"
-                    android:textSize="50sp" />
-
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_row="0"
-                    android:layout_column="1"
-                    android:hint="Saisissez la plaque d'immatriculation" />
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" >
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_row="1"
-                    android:layout_column="0"
-                    android:text="Marque"
-                    android:textSize="75sp" />
-
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_row="1"
-                    android:layout_column="1"
-                    android:hint="Saisissez la marque du véhicule" />
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" >
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_row="2"
-                    android:layout_column="0"
-                    android:text="Modèle"
-                    android:textSize="75sp" />
-
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_row="2"
-                    android:layout_column="1"
-                    android:hint="Saisissez le modèle du véhicule" />
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" >
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_row="3"
-                    android:layout_column="0"
-                    android:text="Couleur"
-                    android:textSize="75sp" />
-
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_row="3"
-                    android:layout_column="1"
-                    android:hint="Saisissez la couleur du véhicule" />
-            </TableRow>
+            android:layout_weight="1" >
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_row="4"
-                android:layout_column="0"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="Immatriculation"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/bluetheme"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <EditText
+                android:id="@+id/editImmat"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="bottom|center_horizontal"
+                android:hint="Saisissez la plaque d'immatriculation" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="Marque"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/bluetheme"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <EditText
+                android:id="@+id/editMarque"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="bottom|center_horizontal"
+                android:hint="Saisissez la marque du véhicule" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="Modèle"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/bluetheme"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <EditText
+                android:id="@+id/editModele"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="bottom|center_horizontal"
+                android:hint="Saisissez le modèle du véhicule" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="Couleur"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/bluetheme"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <EditText
+                android:id="@+id/editCouleur"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="bottom|center_horizontal"
+                android:hint="Saisissez la couleur du véhicule" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
                 android:text="Puissance"
-                android:textSize="75sp" />
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/bluetheme"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
 
             <EditText
+                android:id="@+id/editPuissance"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_row="4"
-                android:layout_column="1"
+                android:layout_weight="1"
+                android:gravity="bottom|center_horizontal"
+                android:inputType="number"
                 android:hint="Saisissez le nombre de chevaux dynamiques" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_row="5"
-                android:layout_column="0"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
                 android:text="Catégorie"
-                android:textSize="75sp" />
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/bluetheme"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
 
             <EditText
+                android:id="@+id/editCategorie"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_row="5"
-                android:layout_column="1"
-                android:text="Compact, Citadine, Berline, S.U.V, ..." />
+                android:layout_weight="1"
+                android:gravity="bottom|center_horizontal"
+                android:hint="Compact, Citadine, Berline, S.U.V, ..." />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_row="6"
-                android:layout_column="0"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
                 android:text="Boite de vitesse"
-                android:textSize="75sp" />
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/bluetheme"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
 
             <EditText
+                android:id="@+id/editBoiteVitesse"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_row="6"
-                android:layout_column="1"
-                android:text="Boite manuelle ou automatique" />
+                android:gravity="bottom|center_horizontal"
+                android:layout_weight="1"
+                android:hint="Boite manuelle ou automatique" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_row="7"
-                android:layout_column="0"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
                 android:text="Année"
-                android:textSize="75sp" />
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/bluetheme"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
 
             <EditText
+                android:id="@+id/editAnnee"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_row="7"
-                android:layout_column="1"
-                android:text="Année de mise en circulation" />
+                android:layout_weight="1"
+                android:gravity="bottom|center_horizontal"
+                android:inputType="number"
+                android:hint="Année de mise en circulation" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/submitBtn"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:text="Valider"
+                android:textSize="20sp"
+                android:backgroundTint="@color/bluetheme"/>
+        </TableRow>
 
 
-        </TableLayout>
+    </TableLayout>
 
 </LinearLayout>
